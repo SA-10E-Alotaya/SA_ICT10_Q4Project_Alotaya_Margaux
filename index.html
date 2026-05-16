@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-Emerald</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: light;
+        }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Inter, system-ui, sans-serif;
+            background: #eaf0ff;
+            color: #111827;
+        }
+        .topbar {
+            background: linear-gradient(90deg, #4f826c, #6aa88a);
+            color: white;
+            padding: 0.85rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        .brand {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: white;
+        }
+        .nav-links a.active {
+            font-weight: 800;
+        }
+        .page-shell {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 2rem 1rem 3rem;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
+            margin-bottom: 0.8rem;
+            font-size: clamp(2.4rem, 3vw, 3.8rem);
+            font-weight: 800;
+        }
+        .hero p {
+            margin: 0;
+            color: #4b5563;
+            font-size: 1.05rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+        .highlight-card {
+            background: white;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 24px 80px rgba(15, 23, 42, 0.12);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .highlight-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 30px 90px rgba(15, 23, 42, 0.16);
+        }
+        .highlight-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            display: block;
+        }
+        .highlight-card-body {
+            padding: 1.25rem;
+        }
+        .highlight-card-title {
+            margin: 0 0 0.45rem;
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+        .highlight-card-text {
+            margin: 0;
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+        .footer {
+            margin-top: 3rem;
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 768px) {
+            .topbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-links {
+                width: 100%;
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">10-Emerald</div>
+        <nav class="nav-links">
+            <a href="Classmates.html">Classmates</a>
+            <a href="attendance.html">Attendance Tracker</a>
+            <a class="active" href="#gallery">Gallery</a>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="hero" id="gallery">
+            <h1>Highlights of Our 10-Emerald Journey</h1>
+            <p>Explore the memories and milestones from our class project gallery.</p>
+        </section>
+
+        <section class="grid">
+            <article class="highlight-card">
+                <img src="jco.jpg" alt="Camping scene">
+                <div class="highlight-card-body">
+                    <h2 class="highlight-card-title">Joint Camp-out</h2>
+                    <p class="highlight-card-text">Super fun and tiring at the same time!</p>
+                </div>
+            </article>
+
+            <article class="highlight-card">
+                <img src="xmas.JPG" alt="Fire on stage">
+                <div class="highlight-card-body">
+                    <h2 class="highlight-card-title">Christmas Party</h2>
+                    <p class="highlight-card-text">Last Christmas Party with 10 Emerald SY2025-2026</p>
+                </div>
+            </article>
+
+            <article class="highlight-card">
+                <img src="ms lim bday.jpg" alt="Art class creations">
+                <div class="highlight-card-body">
+                    <h2 class="highlight-card-title">Ms. Lim's Birthday</h2>
+                    <p class="highlight-card-text">Happy Birthday, Ms. Lim!</p>
+                </div>
+            </article>
+
+            <article class="highlight-card">
+                <img src="catgrad.JPG" alt="Field trip group">
+                <div class="highlight-card-body">
+                    <h2 class="highlight-card-title">CAT Graduation</h2>
+                    <p class="highlight-card-text">Last day of CAT classes..</p>
+                </div>
+            </article>
+
+            <article class="highlight-card">
+                <img src="lastweek.jpg" alt="Basketball practice">
+                <div class="highlight-card-body">
+                    <h2 class="highlight-card-title">Last Week of Classes</h2>
+                    <p class="highlight-card-text">Certificate awarding and paiiyakin.</p>
+                </div>
+            </article>
+
+            <article class="highlight-card">
+                <img src="lastday.JPG" alt="Music class fun">
+                <div class="highlight-card-body">
+                    <h2 class="highlight-card-title">Final Day</h2>
+                    <p class="highlight-card-text">Farewell, OBSA 10 Emerald SY2025-2026</p>
+                </div>
+            </article>
+        </section>
+
+        <div class="footer">© 2025–2026 10-Emerald. All rights reserved.</div>
+    </main>
+</body>
+</html>
